@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import "./index.css";
+
+const oneline = true;
+
+function Contact() {
+  return(
+  <div className="Contact"> 
+      <div className="name">
+    <h4>MH Trillat</h4>
+    <section>
+    <img src= "https://i.pinimg.com/474x/05/a6/f6/05a6f6db1051024604ecd90bf231dfb7.jpg"/>
+    </section>
+        <div className="status">
+          <p>{oneline ? 'Oneline': 'Offline'}</p>
+      </div>
+         </div>
+         </div>
+      
   );
+
+
 }
 
-export default App;
+
+
+export default Contact;
